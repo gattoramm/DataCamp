@@ -6,7 +6,7 @@ __*About DataCamp*__
 
 ### [My Learning Progress:](https://www.datacamp.com/profile/gattoramm)
 
-* Skils:
+* Courses:
   * Spreadsheet
     * [Spreadsheet Basics](https://www.datacamp.com/statement-of-accomplishment/course/14c50608048ff627b965ad843bf598710dbeefc1)
   * SQL
