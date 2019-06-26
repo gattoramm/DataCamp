@@ -20,5 +20,6 @@ __*About DataCamp*__
     * [Introduction to Python](https://www.datacamp.com/statement-of-accomplishment/course/98d00fdca366e90d1c33bb7fb54092d19c196bea)
     * [Introduction to Data Science in Python](https://www.datacamp.com/statement-of-accomplishment/course/1999fa162a2f35879bebc019e9b3206ff2b2b33b)
     * [Intermediate Python for Data Science](https://www.datacamp.com/statement-of-accomplishment/course/b9a4369a95b7267d483aef7d2c961cb0c76c8e30)
+    * [Python Data Science Toolbox (Part 1)](https://www.datacamp.com/statement-of-accomplishment/course/9a8b5f3851a06be0c799dcf3331833e3ceb5fe31)
   * _Git_
     * [Introduction to Git](https://www.datacamp.com/statement-of-accomplishment/course/961ce7ddb13ed26e465863fc007562af66c7e92a)
