@@ -1,4 +1,4 @@
-##SQL Fundamentals
+## SQL Fundamentals
 Learn the fundamental skills necessary to interact with the majority of dialects of SQL -- PostgreSQL, MySQL, Oracle, and others! The skills you learn by taking these courses will empower you to join tables, summarize data, and answer your data analysis and data science questions.
 
 ### 1. Intro to SQL for Data Science
