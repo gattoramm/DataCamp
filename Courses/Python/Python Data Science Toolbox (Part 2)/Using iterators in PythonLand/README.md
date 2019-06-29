@@ -13,7 +13,7 @@ One of the things you learned about in this chapter is that not all iterables ar
 
 You can use `range()` in a `for` loop as *if* it's a list to be iterated over:
 
-```javascript
+```python
 for i in range(5):
   print(i)
 ```
