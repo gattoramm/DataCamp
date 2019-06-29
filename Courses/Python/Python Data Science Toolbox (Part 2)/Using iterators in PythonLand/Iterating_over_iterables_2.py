@@ -1,9 +1,8 @@
 """
-
 Iterating over iterables (2)
 
-Your task for this exercise is to show that calling range() with 10**100 won't actually pre-create the list.
-
+Your task for this exercise is to show that calling range() with 10**100
+won't actually pre-create the list.
 """
 
 # Create an iterator for range(3): small_value
@@ -17,7 +16,6 @@ print(next(small_value))
 # Loop over range(3) and print the values
 for num in range(3):
     print(num)
-
 
 # Create an iterator for range(10 ** 100): googol
 googol = iter(range(10 ** 100))

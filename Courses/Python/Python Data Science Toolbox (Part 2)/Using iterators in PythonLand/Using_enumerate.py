@@ -1,14 +1,15 @@
 """
 Using enumerate
 
-In this exercise, you are given a list of strings mutants and you will practice using enumerate() on it by printing out a list of tuples and unpacking the tuples using a for loop.
-
+In this exercise, you are given a list of strings mutants and you will
+practice using enumerate() on it by printing out a list of tuples and
+unpacking the tuples using a for loop.
 """
 # Create a list of strings: mutants
-mutants = ['charles xavier', 
-            'bobby drake', 
-            'kurt wagner', 
-            'max eisenhardt', 
+mutants = ['charles xavier',
+            'bobby drake',
+            'kurt wagner',
+            'max eisenhardt',
             'kitty pryde']
 
 # Create a list of tuples: mutant_list
