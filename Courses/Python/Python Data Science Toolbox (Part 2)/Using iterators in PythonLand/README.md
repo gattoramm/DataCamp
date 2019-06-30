@@ -1,3 +1,6 @@
+## Using iterators in PythonLand
+Here, you'll learn all about iterators and iterables, which you have already worked with before when writing for loops! You'll learn about some very useful functions that will allow you to effectively work with iterators and finish the chapter with a use case that is pertinent to the world of Data Science - dealing with large amounts of data - in this case, data from Twitter that you will load in chunks using iterators!
+
 ### Iterators vs Iterables
 Let's do a quick recall of what you've learned about **iterables** and **iterators**. Recall from the video that an *iterable* is an object that can return an *iterator*, while an *iterator* is an object that keeps state and produces the next value when you call `next()` on it. In this exercise, you will identify which object is an iterable and which is an *iterator*.
 
