@@ -1,3 +1,6 @@
+## List comprehensions and generators
+In this chapter, you'll build on your knowledge of iterators and be introduced to list comprehensions, which allow you to create complicated lists and lists of lists in one line of code! List comprehensions can dramatically simplify your code and make it more efficient, and will become a vital part of your Python Data Science toolbox. You'll then learn about generators, which are extremely helpful when working with large sequences of data that you may not want to store in memory but instead generate on the fly.
+
 ### Writing list comprehensions
 You now have all the knowledge necessary to begin writing list comprehensions! Your job in this exercise is to write a list comprehension that produces a list of the squares of the numbers ranging from 0 to 9.
 
@@ -42,3 +45,36 @@ Comprehensions aren't relegated merely to the world of lists. There are many oth
 Recall that the main difference between a list comprehension and a *dict comprehension* is the use of curly braces `{}` instead of `[]`. Additionally, members of the dictionary are created using a colon `:`, as in `<key> : <value>`.
 
 You are given a list of strings fellowship and, using a **dict comprehension**, create a dictionary with the members of the list as the keys and the length of each string as the corresponding values.
+
+### Write your own generator expressions
+You are familiar with what generators and generator expressions are, as well as its difference from list comprehensions. In this exercise, you will practice building generator expressions on your own.
+
+Recall that generator expressions basically have the same syntax as list comprehensions, except that it uses parentheses `()` instead of brackets `[]`; this should make things feel familiar! Furthermore, if you have ever iterated over a dictionary with `.items()`, or used the `range()` function, for example, you have already encountered and used generators before, without knowing it! When you use these functions, Python creates generators for you behind the scenes.
+
+Now, you will start simple by creating a generator object that produces numeric values.
+
+### Changing the output in generator expressions
+Great! At this point, you already know how to write a basic generator expression. In this exercise, you will push this idea a little further by adding to the output expression of a generator expression. Because generator expressions and list comprehensions are so alike in syntax, this should be a familiar task for you!
+
+You are given a list of strings `lannister` and, using a generator expression, create a generator object that you will iterate over to print its values.
+
+### Build a generator
+In previous exercises, you've dealt mainly with writing generator expressions, which uses comprehension syntax. Being able to use comprehension syntax for generator expressions made your work so much easier!
+
+Now, recall from the video that not only are there generator expressions, there are *generator functions* as well. **Generator functions** are functions that, like generator expressions, yield a series of values, instead of returning a single value. A generator function is defined as you do a regular function, but whenever it generates a value, it uses the keyword `yield` instead of `return`.
+
+In this exercise, you will create a generator function with a similar mechanism as the generator expression you defined in the previous exercise:
+
+```python
+lengths = (len(person) for person in lannister)
+```
+
+### List comprehensions for time-stamped data
+You will now make use of what you've learned from this chapter to solve a simple data extraction problem. You will also be introduced to a data structure, the pandas **Series**, in this exercise. We won't elaborate on it much here, but what you should know is that it is a data structure that you will be working with a lot of times when analyzing data from pandas DataFrames. You can think of DataFrame columns as single-dimension arrays called Series.
+
+In this exercise, you will be using a list comprehension to extract the time from time-stamped Twitter data. The pandas package has been imported as `pd` and the file `'tweets.csv'` has been imported as the df DataFrame for your use.
+
+### Conditional list comprehensions for time-stamped data
+Great, you've successfully extracted the data of interest, the time, from a pandas DataFrame! Let's tweak your work further by adding a conditional that further specifies which entries to select.
+
+In this exercise, you will be using a list comprehension to extract the time from time-stamped Twitter data. You will add a conditional expression to the list comprehension so that you only select the times in which `entry[17:19]` is equal to `'19'`. The pandas package has been imported as `pd` and the file `'tweets.csv'` has been imported as the `df` DataFrame for your use.
