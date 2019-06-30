@@ -1,8 +1,5 @@
 """
 Iterating over iterables (2)
-
-Your task for this exercise is to show that calling range() with 10**100
-won't actually pre-create the list.
 """
 
 # Create an iterator for range(3): small_value

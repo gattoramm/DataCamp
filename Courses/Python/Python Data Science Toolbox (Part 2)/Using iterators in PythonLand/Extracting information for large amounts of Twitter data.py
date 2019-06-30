@@ -2,6 +2,9 @@
 Extracting information for large amounts of Twitter data
 """
 
+#import pandas
+import pandas as pd
+
 # Define count_entries()
 def count_entries(csv_file, c_size, colname):
     """Return a dictionary with counts of

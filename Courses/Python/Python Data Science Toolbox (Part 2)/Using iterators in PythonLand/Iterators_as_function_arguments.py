@@ -1,13 +1,7 @@
 """
 Iterators as function arguments
-
-There are also functions that take iterators and iterables as arguments.
-For example, the list() and sum() functions return a list and the sum of
-elements, respectively.
-
-In this exercise, you will use these functions by passing an iterable from
-range() and then printing the results of the function calls.
 """
+
 # Create a range object: values
 values = range(10, 21)
 

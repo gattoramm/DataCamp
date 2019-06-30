@@ -1,10 +1,7 @@
 """
 Using * and zip to 'unzip'
-
-You know how to use zip() as well as how to print out values from a zip
-object. Excellent! In this exercise, you will use * in a call to zip() to
-unpack the tuples produced by zip().
 """
+
 mutants = ['charles xavier', 'bobby drake', 'kurt wagner', 'max eisenhardt', 'kitty pryde']
 powers = ['telepathy', 'thermokinesis', 'teleportation', 'magnetokinesis', 'intangibility']
 

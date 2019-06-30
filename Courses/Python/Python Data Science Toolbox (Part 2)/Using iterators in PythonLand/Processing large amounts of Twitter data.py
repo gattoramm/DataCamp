@@ -1,7 +1,10 @@
 """
 Processing large amounts of Twitter data
-
 """
+
+#import pandas
+import pandas as pd
+
 # Initialize an empty dictionary: counts_dict
 counts_dict = {}
 

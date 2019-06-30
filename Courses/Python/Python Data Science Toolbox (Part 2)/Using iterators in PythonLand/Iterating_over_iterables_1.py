@@ -1,9 +1,5 @@
 """
 Iterating over iterables (1)
-
-You are provided with a list of strings flash. You will practice iterating
-over the list by using a for loop. You will also create an iterator for the
-list and access the values from the iterator.
 """
 
 # Create a list of strings: flash
