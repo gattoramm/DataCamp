@@ -11,12 +11,16 @@ Part of exploring a database is figuring out how tables relate to each other. Th
 
 To join the tables, you need to find a column that they have in common where the values are consistent across the tables. Remember: just because two tables have a column with the same name, it doesn't mean those columns necessarily contain compatible data. If you find more than one pair of columns with similar data, you may need to try joining with each in turn to see if you get the same number of results.
 
-Reference the entity relationship diagram if needed.
+Reference the [entity relationship diagram](https://github.com/gattoramm/DataCamp/blob/master/Skill/SQL/SQL%20Fundamentals/4%20SQL%20for%20Exploratory%20Data%20Analysis/erdiagram.png) if needed.
 
+### Read an entity relationship diagram
+The information you need is sometimes split across multiple tables in the database.
 
+What is the most common `stackoverflow` `tag_type`? What companies have a `tag` of that `type`?
 
+To generate a list of such companies, you'll need to join three tables together.
 
-
+Reference the [entity relationship diagram](https://github.com/gattoramm/DataCamp/blob/master/Skill/SQL/SQL%20Fundamentals/4%20SQL%20for%20Exploratory%20Data%20Analysis/erdiagram.png) as needed when determining which columns to use when joining tables.
 
 
 
