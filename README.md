@@ -19,6 +19,7 @@ __*About DataCamp*__
     * [Joining Data in SQL](https://www.datacamp.com/statement-of-accomplishment/course/5afa9c5e62c741a004cf5f848d5b8a5c8ca84a8d)
     * [Intermediate SQL](https://www.datacamp.com/statement-of-accomplishment/course/d5fe7e9c5dfbb29806ca318976ac608433b7df03)
     * [SQL for Exploratory Data Analysis](https://www.datacamp.com/statement-of-accomplishment/course/c7c440d169c90a1d3d17a40369f5a637330d3547)
+    * [Introduction to SQL Server](https://www.datacamp.com/statement-of-accomplishment/course/da23a95bd7a1e537f014399057a3689313d83ef0)
   * *Python*
     * [Introduction to Python](https://www.datacamp.com/statement-of-accomplishment/course/98d00fdca366e90d1c33bb7fb54092d19c196bea)
     * [Introduction to Data Science in Python](https://www.datacamp.com/statement-of-accomplishment/course/1999fa162a2f35879bebc019e9b3206ff2b2b33b)
