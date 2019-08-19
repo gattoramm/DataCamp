@@ -1,0 +1,11 @@
+## Python Data Science Toolbox (Part 1)
+It's now time to push forward and develop your Python chops even further. There are lots and lots of fantastic functions in Python and its library ecosystem. However, as a Data Scientist, you'll constantly need to write your own functions to solve problems that are dictated by your data. The art of function writing is what you'll learn in this first Python Data Science toolbox course. You'll come out of this course being able to write your very own custom functions, complete with multiple parameters and multiple return values, along with default arguments and variable-length arguments. You'll gain insight into scoping in Python and be able to write lambda functions and handle errors in your very own function writing practice. On top of this, you'll wrap up each Chapter by diving into using your acquired skills to write functions that analyze twitter DataFrames and are generalizable to broader Data Science contexts.
+
+### 1. Writing your own functions
+Here you will learn how to write your very own functions. In this Chapter, you'll learn how to write simple functions, as well as functions that accept multiple arguments and return multiple values. You'll also have the opportunity to apply these newfound skills to questions that commonly arise in Data Science contexts.
+
+### 2. Default arguments, variable-length arguments and scope
+In this chapter, you'll learn to write functions with default arguments, so that the user doesn't always need to specify them, and variable-length arguments, so that they can pass to your functions an arbitrary number of arguments. These are both incredibly useful tools! You'll also learn about the essential concept of scope. Enjoy!
+
+### 3. Lambda functions and error-handling
+Herein, you'll learn about lambda functions, which allow you to write functions quickly and on-the-fly. You'll also get practice at handling errors that your functions, at some point, will inevitably throw. You'll wrap up once again applying these skills to Data Science questions.
