@@ -35,4 +35,16 @@ Two lists have been created for you on the right. Can you paste them together an
 
 Note: For now, we can understand an [**iterable**](https://docs.python.org/2/glossary.html#term-iterable) as being any collection of objects, e.g. a List.
 
-###
+### String Methods
+Strings come with a bunch of methods. Follow the instructions closely to discover some of them. If you want to discover them in more detail, you can always type `help(str)` in the IPython Shell.
+
+A string `place` has already been created for you to experiment with.
+
+### List Methods
+Strings are not the only Python types that have methods associated with them. Lists, floats, integers and booleans are also types that come packaged with a bunch of useful methods. In this exercise, you'll be experimenting with:
+
+* [index()](https://docs.python.org/3/library/stdtypes.html#str.index), to get the index of the first element of a list that matches its input and
+
+* [count()](https://docs.python.org/3/library/stdtypes.html#str.count), to get the number of times an element appears in a list.
+
+You'll be working on the list with the area of different parts of a house: `areas`.
