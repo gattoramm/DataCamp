@@ -99,7 +99,7 @@ np_mat + np_mat
 ### Average versus median
 You now know how to use `numpy` functions to get a better feeling for your data. It basically comes down to importing `numpy` and then calling several simple functions on the numpy arrays:
 
-````python
+```python
 import numpy as np
 x = [1, 4, 8, 10, 12]
 np.mean(x)
