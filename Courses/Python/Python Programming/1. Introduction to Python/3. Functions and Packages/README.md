@@ -68,14 +68,15 @@ For a fancy clustering algorithm, you want to find the circumference, **C**, and
 
 **C** = **2 * pi * r**
 
-$$A = \pi r^2$$
+**A** = **pi * r * r**
 
+To use the constant `pi`, you'll need the `math` package. A variable `r` is already coded in the script. Fill in the code to calculate `C` and `A` and see how the [print()](https://docs.python.org/3/library/functions.html#print) functions create some nice printouts.
 
+### Selective import
+General imports, like `import math`, make **all** functionality from the `math` package available to you. However, if you decide to only use a specific part of a package, you can always make your import more selective:
 
+```python
+from math import pi
+```
 
-
-
-
-
-
-
+Let's say the Moon's orbit around planet Earth is a perfect circle, with a radius `r` (in km) that is defined in the script.
