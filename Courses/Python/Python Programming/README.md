@@ -1,0 +1,14 @@
+## Python Programming
+Discover important data structures like dictionaries and DataFrames, visualize real world data with matplotlib, and learn the art of writing your own Python functions.
+
+### 1. Introduction to Python
+Python is a general-purpose programming language that is becoming more and more popular for doing data science. Companies worldwide are using Python to harvest insights from their data and get a competitive edge. Unlike any other Python tutorial, this course focuses on Python specifically for data science. In our Intro to Python class, you will learn about powerful ways to store and manipulate data as well as cool data science tools to start your own analyses. Enter DataCamp’s online Python curriculum.
+
+### 2. Intermediate Python for Data Science
+The intermediate python course is crucial to your data science curriculum. Learn to visualize real data with matplotlib's functions and get to know new data structures such as the dictionary and the Pandas DataFrame. After covering key concepts such as boolean logic, control flow and loops in Python, you're ready to blend together everything you've learned to solve a case study using hacker statistics.
+
+### 3. Python Data Science Toolbox (Part 1)
+It's now time to push forward and develop your Python chops even further. There are lots and lots of fantastic functions in Python and its library ecosystem. However, as a Data Scientist, you'll constantly need to write your own functions to solve problems that are dictated by your data. The art of function writing is what you'll learn in this first Python Data Science toolbox course. You'll come out of this course being able to write your very own custom functions, complete with multiple parameters and multiple return values, along with default arguments and variable-length arguments. You'll gain insight into scoping in Python and be able to write lambda functions and handle errors in your very own function writing practice. On top of this, you'll wrap up each Chapter by diving into using your acquired skills to write functions that analyze twitter DataFrames and are generalizable to broader Data Science contexts.
+
+### 4. Python Data Science Toolbox (Part 2)
+In this second course in the Python Data Science Toolbox, you'll continue to build your Python Data Science skills. First you'll enter the wonderful world of iterators, objects that you have already encountered in the context of for loops without having necessarily known it. You'll then learn about list comprehensions, which are extremely handy tools that form a basic component in the toolbox of all modern Data Scientists working in Python. You'll end the course by working through a case study in which you'll apply all of the techniques you learned both in this course as well as the prequel. If you're looking to make it as a Pythonista Data Science ninja, you have come to the right place.
