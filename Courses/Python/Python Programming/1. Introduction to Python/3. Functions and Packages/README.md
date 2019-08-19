@@ -63,9 +63,12 @@ You'll be working on the list with the area of different parts of the house: `ar
 ### Import package
 As a data scientist, some notions of geometry never hurt. Let's refresh some of the basics.
 
-For a fancy clustering algorithm, you want to find the circumference, \(C\), and area, \(C\), of a circle. When the radius of the circle is `r`, you can calculate \(C\) and \(A\) as:
+For a fancy clustering algorithm, you want to find the circumference, **C**, and area, **A**, of a circle. When the radius of the circle is `r`, you can calculate **C** and **A** as:
 
-> $$C = 2\pi r$$ $$A = \pi r^2$$
+
+**C** = **2 * pi * r**
+
+$$A = \pi r^2$$
 
 
 
