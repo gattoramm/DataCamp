@@ -1,0 +1,141 @@
+## Loops
+There are several techniques to repeatedly execute Python code. While loops are like repeated if statements; the for loop is there to iterate over all kinds of data structures. Learn all about them in this chapter.
+
+### Basic while loop
+Below you can find the example from the video where the `error` variable, initially equal to `50.0`, is divided by 4 and printed out on every run:
+
+```python
+error = 50.0
+while error > 1 :
+    error = error / 4
+    print(error)
+```
+
+This example will come in handy, because it's time to build a `while` loop yourself! We're going to code a `while` loop that implements a very basic control system for an [inverted pendulum](https://en.wikipedia.org/wiki/Inverted_pendulum). If there's an offset from standing perfectly straight, the while loop will incrementally fix this offset.
+
+Note that if your `while` loop takes too long to run, you might have made a mistake!
+
+### Add conditionals
+The `while` loop that corrects the `offset` is a good start, but what if `offset` is negative? You can try to run the following code where `offset` is initialized to `-6`:
+
+```python
+# Initialize offset
+offset = -6
+
+# Code the while loop
+while offset != 0 :
+    print("correcting...")
+    offset = offset - 1
+    print(offset)
+```
+
+but your session will be disconnected. The `while` loop will never stop running, because `offset` will be further decreased on every run. `offset != 0` will never become False and the `while` loop continues forever.
+
+Fix things by putting an `if`-`else` statement inside the `while` loop. If your code is still taking too long to run, you probably made a mistake!
+
+### Loop over a list
+Have another look at the `for` loop that Filip showed in the video:
+
+```python
+fam = [1.73, 1.68, 1.71, 1.89]
+for height in fam : 
+    print(height)
+```
+
+As usual, you simply have to indent the code with 4 spaces to tell Python which code should be executed in the `for` loop.
+
+The `areas` variable, containing the area of different rooms in your house, is already defined.
+
+### Indexes and values (1)
+Using a `for` loop to iterate over a list only gives you access to every list element in each run, one after the other. If you also want to access the index information, so where the list element you're iterating over is located, you can use [enumerate()](https://docs.python.org/3/library/functions.html#enumerate).
+
+As an example, have a look at how the `for` loop from the video was converted:
+
+```python
+fam = [1.73, 1.68, 1.71, 1.89]
+for index, height in enumerate(fam) :
+    print("person " + str(index) + ": " + str(height))
+```
+
+### Indexes and values (2)
+For non-programmer folks, `room 0: 11.25` is strange. Wouldn't it be better if the count started at 1?
+
+### Loop over list of lists
+Remember the `house` variable from the Intro to Python course? Have a look at its definition on the right. It's basically a list of lists, where each sublist contains the name and area of a room in your house.
+
+It's up to you to build a `for` loop from scratch this time!
+
+### Loop over dictionary
+In Python 3, you need the [items()](https://docs.python.org/3/library/stdtypes.html#dict.items) method to loop over a dictionary:
+
+```python
+world = { "afghanistan":30.55, 
+          "albania":2.77,
+          "algeria":39.21 }
+
+for key, value in world.items() :
+    print(key + " -- " + str(value))
+```
+
+Remember the `europe` dictionary that contained the names of some European countries as key and their capitals as corresponding value? Go ahead and write a loop to iterate over it!
+
+### Loop over Numpy array
+If you're dealing with a 1D Numpy array, looping over all elements can be as simple as:
+
+```python
+for x in my_array :
+    ...
+```
+
+If you're dealing with a 2D Numpy array, it's more complicated. A 2D array is built up of multiple 1D arrays. To explicitly iterate over all separate elements of a multi-dimensional array, you'll need this syntax:
+
+```python
+for x in np.nditer(my_array) :
+    ...
+```
+
+Two Numpy arrays that you might recognize from the intro course are available in your Python session: `np_height`, a Numpy array containing the heights of Major League Baseball players, and `np_baseball`, a 2D Numpy array that contains both the heights (first column) and weights (second column) of those players.
+
+### Loop over DataFrame (1)
+Iterating over a Pandas DataFrame is typically done with the [iterrows()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.iterrows.html) method. Used in a `for` loop, every observation is iterated over and on every iteration the row label and actual row contents are available:
+
+```python
+for lab, row in brics.iterrows() :
+    ...
+```
+
+In this and the following exercises you will be working on the `cars` DataFrame. It contains information on the cars per capita and whether people drive right or left for seven countries in the world.
+
+### Loop over DataFrame (2)
+The row data that's generated by [iterrows()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.iterrows.html) on every run is a Pandas Series. This format is not very convenient to print out. Luckily, you can easily select variables from the Pandas Series using square brackets:
+
+```python
+for lab, row in brics.iterrows() :
+    print(row['country'])
+```
+
+### Add column (1)
+In the video, Filip showed you how to add the length of the country names of the `brics` DataFrame in a new column:
+
+```python
+for lab, row in brics.iterrows() :
+    brics.loc[lab, "name_length"] = len(row["country"])
+```
+
+You can do similar things on the `cars` DataFrame.
+
+### Add column (2)
+Using [iterrows()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.iterrows.html) to iterate over every observation of a Pandas DataFrame is easy to understand, but not very efficient. On every iteration, you're creating a new Pandas Series.
+
+If you want to add a column to a DataFrame by calling a function on another column, the [iterrows()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.iterrows.html) method in combination with a for loop is not the preferred way to go. Instead, you'll want to use [apply()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.apply.html).
+
+Compare the [iterrows()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.iterrows.html) version with the [apply()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.apply.html) version to get the same result in the brics DataFrame:
+
+```python
+for lab, row in brics.iterrows() :
+    brics.loc[lab, "name_length"] = len(row["country"])
+
+brics["name_length"] = brics["country"].apply(len)
+```
+
+We can do a similar thing to call the [upper()](https://docs.python.org/2/library/stdtypes.html#str.upper) method on every name in the `country` column. However, [upper()](https://docs.python.org/2/library/stdtypes.html#str.upper) is a **method**, so we'll need a slightly different approach:
