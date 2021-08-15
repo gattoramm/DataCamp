@@ -12,4 +12,3 @@ To leverage the code that brilliant Python developers have written, you'll learn
 
 ### 4. NumPy
 NumPy is a Python package to efficiently do data science. Learn to work with the NumPy array, a faster and more powerful alternative to the list, and take your first steps in data exploration.
-
